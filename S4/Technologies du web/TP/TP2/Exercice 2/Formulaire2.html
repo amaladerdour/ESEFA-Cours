@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP2,Exercice 2-Formulaire 2</title>
+        <link rel="stylesheet" href="http://www.uiz.ac.ma">
+        <meta charset="utf-8"/>
+
+    </head>
+    <body>
+        <h1 style="text-align: center;">Inscription</h1>
+        <hr>
+        <b>Données Presonnelles</b>
+        <br>
+        <form >
+        <table align="center">
+                <tr>
+                <td align="right"><b> Nom </b></td>
+                <td><input type="text" name="nom"/></td>
+            </tr>
+            <tr>
+                <td align="right"><b> Prénom </b></td>
+                <td><input type="text" name="Prenom"/></td>
+            </tr>
+            <tr>
+                <td align="right"><b> Numéro carte d'étudiant </b></td>
+                <td><input type="number" name="NumEtud"/></td>
+            </tr>
+            <tr>
+                <td align="right"><b> Téléphonr </b></td>
+                <td><input type="number" name="tele"/></td>
+            </tr>
+            <tr>
+                <td align="right"><b> Adresse Email </b></td>
+                <td><input type="text" name="Email"/></td>
+            </tr>
+        </table>
+        <hr>
+        <b>Vos études actuelles</b>
+        <br>
+    <table align="center">
+        <tr>
+            <td align="right">
+                <b align="center">UFR</b>
+            </td>
+            <td >
+                <select name="laliste" id="pet-select">
+                    <option value="">--Choisir une URF dans la liste--</option>    
+                    <option value="1">Autre</option>
+                    <option value="2">Arts et Culture</option>
+                    <option value="3">Études Françaises</option>
+                    <option value="4">Études Romanes, Slaves et Orientales</option>
+                    <option value="5">Langues et Cultures Antiques</option>
+                    <option value="6">Langues Étrangères et Appliquées</option>
+                    <option value="7">Lettres</option>
+                    <option value="8">Mathématiques, Sciences Économiques et Sociales </option>
+                    <option value="9">Philosophie </option>
+                    <option value="10">Psychologie</option>
+                    <option value="11">Sciences de l'Éducation </option>
+                    <option value="12">Sciences Historiques Artistiques et Politiques</option>
+                </select>
+           </td>
+        </tr>
+    
+        <tr>
+            <td align="right">
+                <b align="center">Année</b>
+            </td>
+            <td>
+                <select name="laliste" id="pet-select">
+                    <option value="">--Choisir une année--</option>
+                    <option value="1">Autre</option>
+                    <option value="2">Deug 1ère année</option>
+                    <option value="3">Deug 2ème année</option>
+                    <option value="4">Licence</option>
+                    <option value="5">Maîtrise</option>
+                    <option value="6">DEA</option>
+                    <option value="7">Doctorat</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+        <hr>
+        <b>Votre Inscription</b>
+        <br>
+    <dir align="center">
+        <b >Quel semestre?</b>
+        <select name="laliste" id="pet-select" >
+            <option value="">--Choisir une semestre--</option>
+            <option value="1">1er semestre</option>
+            <option value="2">2ème semestre</option>
+        </select>
+    </dir>
+        <hr>
+        <dir align="center">
+        <input type="reset" value="pour vider le formulaire,Clicer ici." />
+        <input type="submit" value="Envoyer">
+        </dir>
+        <hr>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body{
+    color: black;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 50px;
+  }
+#form {
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: black;
+    margin-left: 3%;
+}
+#id_div {
+    background-color: rgb(255, 215, 0);
+    width: 30%;
+    height: 100%;
+    margin-left: 3%;
+    text-align: center;
+    border-width:  100px;
+    border-color: black;
+    float: right;
+    left:100px;
+    top:100px;
+}
+.affiche{
+    background-color: white;
+    border:1px solid yellowgreen;
+    width: auto;
+    height: auto;
+    color: black;
+}

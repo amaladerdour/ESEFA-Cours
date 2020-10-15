@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1583737208 source:c:\users\amal\desktop\s4\data struct\test amal\pile test\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pile.h"
+
+1583736950 c:\users\amal\desktop\s4\data struct\test amal\pile test\pile.h
+	<stdio.h>
+	<stdlib.h>
+

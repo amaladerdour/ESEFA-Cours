@@ -1,0 +1,53 @@
+html { 
+  background-color: #E0E0E0;
+  font-family: Helvetica, sans-serif;
+ }
+
+body { 
+  background-color: #f6fcea;
+  max-width: 60em;
+  margin: 2em auto;
+}
+header{ 
+   background-color: #b71236;
+   text-align: center;
+   color: white;
+   width: 100%;
+   height: 100px;
+   text-transform: uppercase;
+}
+section{
+  margin-left: 5%;
+  margin-right:5%;
+  margin-top: 3%;
+  border-bottom-color: #b71236;
+  border-bottom-style: solid; 
+  }
+h2{
+   font-family:  "Times New Roman", Times, serif;
+   font-weight: bold;
+   font-size: 200%;
+}
+p{
+  background-color: #fcfcea;
+}
+.fraise_Img{
+    border:  solid ;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;    
+}
+.pied-page{
+  font-family: serif;
+  font-size: 90%;
+  text-align: right;
+  margin-bottom: 10%;
+}
+footer{
+  
+    border-right:20px solid;
+    border-left:20px solid;    
+    border-right-color:gray;
+    border-left-color: gray;
+    
+}

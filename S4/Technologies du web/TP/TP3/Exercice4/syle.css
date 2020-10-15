@@ -1,0 +1,31 @@
+body{
+    background-image: url(page.gif);
+    width: 80%;
+    margin-left: 25%;
+}
+h1{
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(233, 107, 212);
+    width: 50%;
+    margin-left: 20%;
+    text-align: center;
+
+}
+.titre{
+    font-size: 150%;
+    color: rgb(107, 3, 107);
+    
+}
+dd{
+   color: navy;
+   font-family: arial;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    max-width: 60%;
+    margin-left:5%;
+    text-align: center;
+}
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TP2,Exercice 2-Formulaire 3</title>
+        <link rel="stylesheet" href="http://www.uiz.ac.ma">
+        <meta charset="utf-8"/>
+
+    </head>
+    <body style="background-color:khaki; margin-left: 1cm;">
+            <h1 style="text-align: center";><u> Fiche de renseignements</u></h1>
+        <fram>
+            <form>
+                <b> Nom: </b>
+                <input type="text" name="nom"/>
+                <b> Prénom: </b>
+                <input type="text" name="Prenom"/>
+                <b> Mot de passe: </b>
+                <input type="password" name="password"/>
+            </form>
+            <br>
+            <form>
+                <b> Quel est votre niveau en HTML : </b>
+                <input type="radio" name="chk1" value="Excellent"checked="checked"/> Excellent
+                <input type="radio" name="chk1" value="Bien" /> Bien
+                <input type="radio" name="chk1" value="Moyen" /> Moyen
+            </form>
+            <br>
+                <b>Quel est votre discipline préférée?</b>
+                    <select name="laliste" size="1" multiple="multiple">
+                        <option value="1">informatique</option>
+                    </select>
+            <br>
+            <br>
+                <b> vous vous êtes inscrit(e)s en: </b>
+            <br>
+                <form >
+                    <input type="checkbox" name="chk1" value="BEUG"/> BEUG
+                    <input type="checkbox" name="chk1" value="BTS" /> BTS
+                    <input type="checkbox" name="chk1" value="IUT" />IUT
+                    <input type="checkbox" name="chk1" value="AUTRE" />AUTRE, à oréciser-->
+                    <input type="text" name="vide"/>
+                </form>
+            <br>
+                <p>Ecrivez ci-dessous le sujet de votre projet informetique (environ 10 lignes):</p>
+            <br>
+                <textarea rows="4" cols="50" style="margin-left: 4cm;">Voici mon projet d'option informatique: </textarea>
+            <br>
+            <br>
+            <table border="solide" width="60%" style="margin-left: 3cm;" >
+                <tr>
+                    <td style="text-align: center;">
+                        <b>Envoyer </b>ces informations <br><br>
+                        <input type="submit" value="Enregistrer" >
+                    </td>
+                    <td style="text-align: center;">
+                        <b>Recommencer</b>la saisie <br><br>
+                        <input type="reset" value="Effacer"  /> 
+                    </td>
+                </tr>
+            </table>
+    </frame>
+    </body>
+</html>

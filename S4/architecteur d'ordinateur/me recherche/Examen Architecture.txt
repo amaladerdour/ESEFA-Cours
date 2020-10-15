@@ -1,0 +1,95 @@
+﻿Examen Architecture!!
+
+	Exercise 1:
+
+		Q1:
+		   La largeur du bus d'adresse est: 20bits (de AD0-AD15 + A15-A19)
+		   ça Capacité d'adressage : 2^20=1Mo.
+
+		Q2:
+			LA Largeur du bus de données est : 16bits.
+
+		Q3:
+			Les deux bus ne sont pas séparés, et les données de ces deux bus ne se mélangent pas grâce à un delai de temps entre les deux, et grace aussi au bus de cmd.
+
+		Q4:
+			La Figure 2 contient 16 segment
+			La taille d'un segement est : 64Ko.
+		     =============================================
+		    | Segement    |     Debut    |      Fin       |
+		     =============================================
+		    | Code        |     30000    |     40000      |
+		     =============================================
+		    | Donnée      |     70000    |     80000      |
+		     =============================================
+		    | La Pile     |     A0000    |     90000      |
+		     =============================================
+		    | Supplé      |     C0000    |     D0000      |
+		     =============================================
+
+		Q5:
+			Taille du Segement de donnée = Fin - Debut
+										 = 80000-70000 = 0x10000 = 1*16^4=65536 o = 64Ko.
+			Simple verification! =)
+
+		Q6: 
+			Le contenue du Bus d'adresse est : 0x70003 En Binaire.
+
+		Q7: 
+			Le contenue du Bus de données est : A3FD En Binaire.
+			La broche du bus de commande qui doit être mise à 1 est: /RD
+
+		Q8: 
+			C'est L'adressage Physique.
+			0x70003 = 7000:0003
+
+		Q9:
+			On Pass du logique au physique en déphasant a gauche l'adresse du segement avec 4 bits, puis On Ajout l'offset.
+
+		Q10:
+			3500:AB00 = 3500*2²4 + 	AB00 = 35000+AB00 = 3FB00
+			0022:FFFF = 00220+FFFF = 1021F
+
+			10000= 1000:0000 et 0FFF:0010
+			FFFFF = FFFF:000F et FFFA:005F
+			00000 : Y'a Pas! Psk le debut de chaque segement doit être divisible par 16.
+
+	Exercise 2:
+
+		Q1:
+			Le Programme fait :
+				1- Mettre la valeur 3 dans $8
+				2- Dephasage du contenue de $8 (3) Avec 2 bits ==> $9 = $8 * 2² = 3*4 = 12
+				3- Lecture du contenue du casier memoire 0x1000000 et le mettre dans $7 = 3
+				4- Lecture du contenue du casier memoire 0x1000004 et le mettre dans $4 = 2
+				5- Mettre dans $10 le dephasage du contenue de $7 avec $4 bit = 3*2² = 12
+				6- Enregistrer La Valeur 12 dans le casier 0x1000000C .
+
+		Q2:
+			Debut de Segement De Données : 0x10000000
+			,,    ,,  ,,      D'instruction : 0x0040000
+
+		Q3:
+			3 est stocké dans 0x10000000 et 2 dans 0x10000004
+
+		Q4:
+			L'instruction ori $8,$0,3 est sert a etandre la valeur 3 sur 16 bit puis 32bit pour la mettre dans $8 qui est de 32bits.
+			a- 0x00400000
+			b- 0x34080003
+
+		Q5: 
+			Voir le fichier Q5.asm
+
+	Exercise 3:
+
+		Q1: 
+			Que La DRAM Construit apartir des condensateur, et la SRAM apartir des transistor. La DRAM n'est pas chère, lente, grande volume; SRAM Chère, mais rapid.
+
+		Q2: 
+			La RAM Perde toutes les infos dès qu'on étaint l'ordi, alors la ROM "Read Only Memory" : ne perde jamais les informations stockées dedans, de plus qu'on peut pas ecrire dedans.
+			la ROM Standart, EPROM, EEPROM
+
+		Q3 : 
+			taille: DD, SRAM, DRAM, Memoire Virtuelle, cache L2, cache L1, registres.
+			rapidité: registres, cache L1, cache L2, SRAM, DRAM, Memoire Virtuelle, DD.
+

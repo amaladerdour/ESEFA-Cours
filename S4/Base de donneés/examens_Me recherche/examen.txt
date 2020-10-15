@@ -1,0 +1,39 @@
+                     Examen de BD: Session Normale
+
+Cours
+1)	Expliquer la différence s'il existe entre  intégrité et intégration des données.
+2)	Expliquer la différence s'il existe entre delete et truncate.
+Exercice 
+On considère les tables suivantes : 
+Etudiant (code_etu, nom, prénom, sexe, adresse)
+Module (code_module, libellé, filière) 
+Inscrit (code_inscription, code _ etu, code_module, note, validation). 
+Partie 1 
+1)	Construire la table Inscrit en respectant les contraintes suivantes : 
+a)	code_inscription est clé primaire; 
+b)	code_etu est clé étrangère (préciser une action référentielle) ; 
+c)	code_module est clé étrangère (sans préciser d'action référentielle) ; 
+d)	les valeurs du champ note sont comprises entre 0 et 20 ; 
+e)	le champ validation accepte uniquement les valeurs 'v' ou nv'. 
+	(v pour valide et nv pour non valide). 
+2)	Ajouter la colonne semestre à la table module avec une contrainte limitant ses valeurs en entier compris entre 1 et 6.
+Partie 2 
+En utilisant l’algèbre relationnelle répondre aux questions suivantes : 
+1)	Chercher le code, le nom et le prénom des étudiants inscrits filière smp. 
+2)	Lister le nom, le prénom et la moyenne de chaque étudiants de la filière 'smc'. 
+3)	Chercher le nom et le prénom des étudiants qui n'ont validé aucun module.
+4)	Afficher pour chaque module le nombre d'étudiants.
+5)	Chercher les étudiants inscrits dans tous les modules du semestre 5 de la filière smi.
+6)	Chercher le module ayant le nombre maximal d'étudiants inscrits.
+
+Partie 3
+En utilisant SQL répondre aux questions suivantes : 
+1)	Afficher pour chaque module le nombre d'étudiants qui l'ont validé. 
+2)	Chercher pour chaque module le nombre d'étudiants qui y sont inscrits. 
+3)	Chercher pour chaque module le nombre d'étudiants qui y sont inscrits. 
+4)	Chercher les filières ou sont inscrits plus de 100 étudiants. 
+5)	Trouver les étudiants inscrits dans tous les modules de semestre 5 de la filière smi.
+
+Partie 4
+Donner l'arbre algébrique de la requête suivante:
+Nombre &&d'étudiants inscrits dans le module intitulé BD de la filière smi.

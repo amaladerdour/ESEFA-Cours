@@ -1,0 +1,39 @@
+               Examen de BD: Session Rattrapage
+
+
+Cours 
+1.	Donner les avantages et les inconvénients d’index.
+2.	Expliquer l’indépendance données/programmes assurée par les systèmes de bases de données.
+3.	Expliquer la différence entre "natural join" et "join…using…".
+
+Exercice
+On considère les tables suivantes
+Usine(nu, nomu, ville) ;
+Produit(np, nomp, couleur, prix) ;
+Fournisseur(nf, nomf, ville) ;
+et la table Approvisionnement qui fait le lien entre usine, produit et fournisseur :
+Approvisionnement(n_appro, nf*, nu*, np*, qtité, date_appro).
+
+Partie 1
+1.	Donner la commande de création de la table approvisionnement sans contraintes.
+2.	Ajouter une contrainte de clé primaire à approvisionnement.
+3.	Ajouter à approvisionnement une contrainte de clé étrangère (liant la table usine) avec une action référentielle de suppression cascade.
+4.	Supprimer la table usine et les contraintes de référence qui lui sont associées.
+
+Partie 2
+Ecrire en langage algébrique puis en SQL les requêtes suivantes :
+1.	Chercher le nombre de produits par couleur.
+2.	Afficher pour chaque usine son nom et le nombre de fournisseurs qui l'approvisionnent.
+3.	Chercher le nom des fournisseurs qui approvisionne plus de 4 usines en un produit rouge.
+4.	Chercher le(s) produit(s) le(s) plus cher(s).
+5.	Chercher les fournisseurs qui approvisionnent toutes les usines d'Agadir.
+6.	Donner les usines qui s'approvisionnent uniquement chez des fournisseurs de Casa.
+7.	Chercher les noms des produits qui ne sont jamais vendus.
+
+Partie 3
+Ecrire en SQL la requête suivante :
+Chercher les fournisseurs dont les noms contiennent le caractère '_'.
+
+Partie 4
+Donner l’arbre algébrique de la requête suivante :
+Les noms des fournisseurs d’Agadir ayant fourni au moins un produit ‘Chaise’ à une usine de ‘Casa’.
